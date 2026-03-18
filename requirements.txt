@@ -1,0 +1,12 @@
+transformers
+datasets
+accelerate
+peft
+evaluate
+rouge_score
+bert_score
+sentencepiece
+tqdm
+huggingface_hub
+torch
+numpy
