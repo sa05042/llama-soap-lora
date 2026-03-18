@@ -44,6 +44,28 @@ The model is trained on the Medical Dialogue to SOAP Summary Dataset and evaluat
     				│
     				└── utils/
     					└── helpers.py
+### Structure Overview
+
+- README.md – Project overview and instructions.
+- requirements.txt – Python dependencies for training, inference, and evaluation.
+- train.py – Main script to fine-tune the LLaMA model with LoRA adapters on SOAP summarization.
+- inference.py – Script for generating SOAP notes from new dialogues using the trained adapter.
+- evaluate_model.py – Script to evaluate model outputs using ROUGE and BERTScore metrics.
+
+### Directories
+- scripts/ – Utility scripts (e.g., install_dependencies.sh) for setup.
+- config/ – Configuration files (config.py) for model, training, and dataset parameters.
+- data/ – Dataset loader and preprocessing helpers (dataset_loader.py).
+- preprocessing/ – Data preprocessing functions for tokenization and formatting (preprocess.py).
+- model/ – LoRA model definition and setup (lora_model.py).
+- utils/ – Helper functions for training, inference, and evaluation (helpers.py).
+
+### Workflow
+- Load and preprocess medical dialogue datasets.
+- Fine-tune a pre-trained LLaMA model using LoRA adapters for parameter-efficient training.
+- Generate structured SOAP notes using the trained adapter.
+- Evaluate predictions with ROUGE and BERTScore.
+
 ## Dataset
 
 Dataset used:
