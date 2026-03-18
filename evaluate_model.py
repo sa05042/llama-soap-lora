@@ -13,7 +13,7 @@ rouge = evaluate.load("rouge")
 bertscore = evaluate.load("bertscore")
 
 
-def evaluate_model(num_samples=100):
+def evaluate_model(num_samples=250):
 
     dataset = load_medical_dataset()
 
